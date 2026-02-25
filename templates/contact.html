@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Contact — {{ config.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+<div class="contact-page">
+  {{ page.content | safe }}
+</div>
+{% endblock %}

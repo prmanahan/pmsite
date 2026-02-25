@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock %}</title>
+  <meta name="description" content="{{ config.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="{{ get_url(path='/') }}" class="site-title">Peter Manahan</a>
+      <nav>
+        <a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a>
+        <a href="{{ get_url(path='@/about.md') }}">About</a>
+        <a href="{{ get_url(path='@/resume.md') }}">Resume</a>
+        <a href="{{ get_url(path='@/contact.md') }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; {{ now() | date(format="%Y") }} Peter Manahan
+    </div>
+  </footer>
+</body>
+</html>

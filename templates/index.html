@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+  <h1>Peter Manahan</h1>
+  <p class="tagline">
+    Technical Program Manager &amp; Software Architect based in Fredericton, NB.
+    Building better developer workflows, shipping cloud platforms, and writing Rust on the side.
+  </p>
+  <div class="hero-links">
+    <a href="{{ get_url(path='@/projects/_index.md') }}" class="btn-primary">View Projects</a>
+    <a href="{{ get_url(path='@/resume.md') }}" class="btn-secondary">Resume</a>
+    <a href="{{ get_url(path='@/contact.md') }}" class="btn-secondary">Contact</a>
+  </div>
+</div>
+{% endblock %}

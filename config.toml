@@ -1,0 +1,19 @@
+# Zola configuration for pmsite
+base_url = "https://pmanahan.dev"
+title = "Peter Manahan"
+description = "Personal portfolio — projects, writing, and contact."
+default_language = "en"
+compile_sass = true
+build_search_index = false
+generate_feeds = false
+minify_html = true
+
+[markdown]
+
+[markdown.highlighting]
+highlight_code = true
+theme = "ayu-dark"
+
+[extra]
+author = "Peter Manahan"
+email = "prmanahan@pm.me"

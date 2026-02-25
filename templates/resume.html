@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Resume — {{ config.title }}{% endblock %}
+
+{% block content %}
+<div class="resume-page">
+  <h1>Resume</h1>
+  <a href="{{ get_url(path='Peter_Manahan_Resume.pdf') }}" class="download-link">Download PDF &darr;</a>
+
+  <div class="resume-section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>Go</span>
+      <span>Java</span>
+      <span>Rust</span>
+      <span>Python</span>
+      <span>Linux</span>
+      <span>Kubernetes</span>
+      <span>Docker</span>
+      <span>AWS</span>
+      <span>Jenkins</span>
+      <span>GitLab CI</span>
+      <span>Gradle</span>
+      <span>Artifactory</span>
+      <span>Jira</span>
+      <span>Backstage</span>
+    </div>
+  </div>
+
+  <div class="resume-section">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-title">Software Architect</div>
+      <div class="job-company">IBM Canada Software Lab — Toronto, ON &amp; Fredericton, NB</div>
+      <div class="job-dates">09/2024 – 12/2025</div>
+      <p>Led initiatives to optimize QRadar processes, enhance software quality, and increase developer productivity.</p>
+      <ul>
+        <li>Improved CI/CD pipelines and development workflows, reducing failed and unstable deliveries from daily broken builds to rare monthly occurrences.</li>
+        <li>Developed automated build and testing procedures, accelerating quality deliveries from once per quarter to once per week.</li>
+        <li>Enhanced build stability through introduction of a change control board, enforcing standards and reducing errors shipped to customers.</li>
+        <li>Strengthened operational workflows with solutions for continuous improvement and scalability.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Technical Program Manager</div>
+      <div class="job-company">IBM Canada Software Lab — Toronto, ON &amp; Fredericton, NB</div>
+      <div class="job-dates">07/2017 – 09/2024</div>
+      <p>Oversaw best practices development for QRadar and QRadarSuite to enhance team efficiency and optimize workflows.</p>
+      <ul>
+        <li>Executed SaaS launch incorporating trunk-based development and CI/CD practices, streamlining deployment and improving delivery speed and quality.</li>
+        <li>Established developer hub using Backstage, stepping up quality deliveries from monthly to daily and providing data to teams for self-improvement.</li>
+        <li>Aligned cross-functional teams with product requirements and drove strategic vision as product owner across development, support, architecture, and SRE.</li>
+        <li>Advocated for Agile methodologies and best practices, achieving consistent delivery of high-quality solutions.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Senior Development Manager, QRadar Core Platform Services</div>
+      <div class="job-company">IBM Canada Software Lab — Toronto, ON &amp; Fredericton, NB</div>
+      <div class="job-dates">08/2012 – 06/2017</div>
+      <p>Supervised 3 Agile teams specializing in back-end services including database, API, and Big Data.</p>
+      <ul>
+        <li>Managed development initiatives aligned to user requirements and industry standards.</li>
+        <li>Directed enhancement of back-end systems supporting critical security use cases.</li>
+        <li>Launched QRadar on Cloud Managed Service as first cloud-based offering of appliance-based application.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Development Integration Team</div>
+      <div class="job-company">IBM Canada Software Lab — Toronto, ON &amp; Fredericton, NB</div>
+      <div class="job-dates">01/2012 – 06/2013</div>
+      <p>Onsite IBM representative for integration of Q1 Labs acquisition into IBM Security Division.</p>
+    </div>
+  </div>
+
+  <div class="resume-section earlier-roles">
+    <h2>Earlier Roles at IBM</h2>
+    <div class="role">
+      <div class="job-title">Senior Software Manager, IBM Rational</div>
+    </div>
+    <div class="role">
+      <div class="job-title">Installation Architect, IBM Rational</div>
+    </div>
+    <div class="role">
+      <div class="job-title">Release Lead, VisualAge for Java 3.5 and 4.0</div>
+    </div>
+    <div class="role">
+      <div class="job-title">Software Developer, Application Development Tools</div>
+    </div>
+  </div>
+
+  <div class="resume-section">
+    <h2>Education</h2>
+    <div class="job">
+      <div class="job-title">Bachelor of Computer Science (BCSc)</div>
+      <div class="job-company">Technical University of Nova Scotia, Halifax, NS</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
